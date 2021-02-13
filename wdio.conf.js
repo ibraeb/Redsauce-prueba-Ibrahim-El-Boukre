@@ -35,11 +35,14 @@ exports.config = {
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     services: ['chromedriver'],
+    // framework: 'mocha',
     framework: 'cucumber',
     reporters: ['spec'],
+    /* mochaOpts: {
+        ui: 'bdd',
+        timeout: 60000
+    }, */
     cucumberOpts: { // Options to be passed to Cucumber
-        // require: [path.join(__dirname, 'src/step-definitions', 'my-steps.js')]
-        // requireModule: ['@babel/register'],
         requireModule: ['@babel/register'],
         require: ['./src/features/step-definitions/test-profiles.js']
     }
