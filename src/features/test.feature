@@ -1,6 +1,4 @@
-Feature: Provisional scenario name
-  Only blog owners can post to a blog, except administrators,
-  who can post to all blogs.
+Feature: Check that the entire Redsauce team is in the 'about us' section
 
   Scenario: User goes to 'Nosotros' section
     Given I am in Redsauce main page "es"
